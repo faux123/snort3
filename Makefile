@@ -91,7 +91,7 @@ define Package/snort3/install
 	$(INSTALL_DIR) $(1)/opt/etc/snort
 
 	$(INSTALL_CONF) \
-		$(PKG_BUILD_DIR)/opt/etc/snort/*.lua \
+		$(PKG_INSTALL_DIR)/opt/etc/snort/*.lua \
 		$(1)/opt/etc/snort/
 
 	$(INSTALL_DIR) $(1)/opt/etc/init.d
